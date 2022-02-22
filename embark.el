@@ -424,6 +424,7 @@ replaced by the single `embark-allow-edit-actions' variable."
     (format-encode-region embark--ignore-target)
     (format-decode-region embark--ignore-target)
     (xref-find-definitions embark--ignore-target)
+    (xref-find-references embark--ignore-target)
     (sort-regexp-fields embark--ignore-target))
   "Alist associating commands with post-injection setup hooks.
 For commands appearing as keys in this alist, run the
